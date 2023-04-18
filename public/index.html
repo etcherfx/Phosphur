@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Phosphur | A Minimalistic Web Proxy</title>
+    <meta name="description" content="A minimalistic web proxy." />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="flex-center logo-wrapper header-center">
+      <img class="logo" src="phosphur.png" alt="Phosphur Logo" />
+      <h1>Phosphur</h1>
+    </div>
+    <form autocomplete="off" id="uv-form" class="flex-center">
+      <input
+        autocomplete="false"
+        id="uv-search-engine"
+        value="https://www.bing.com/search?q=%s"
+        type="hidden"
+      />
+      <input
+        autocomplete="false"
+        id="uv-address"
+        type="text"
+        placeholder="Search without restrictions"
+      />
+    </form>
+    <p></p>
+    <div class="center-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+    <div class="bottomText" style="left: 10px">Phosphur v0.1.0</div>
+    <div class="bottomText" style="right: 10px">
+      <a
+        href="https://github.com/etcherfx/Phosphur"
+        rel="noopener"
+        target="_blank"
+        >Github</a
+      >
+    </div>
+  </body>
+</html>

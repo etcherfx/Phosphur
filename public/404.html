@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Phosphur | Error</title>
+    <meta name="description" content="A minimalistic web proxy." />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="logo-wrapper left-margin">
+      <h1>Phosphur | Error</h1>
+    </div>
+    <div class="left-margin">
+      <p>The server could not route your request.</p>
+      <p id="uv-error"></p>
+      <code id="uv-error-code"></code>
+      <button id="uv-register-sw" value="Register service worker">
+        Register Service Worker
+      </button>
+    </div>
+    <div class="bottomText" style="left: 10px">Phosphur v0.1.0</div>
+    <div class="bottomText" style="right: 10px">
+      <a
+        href="https://github.com/etcherfx/Phosphur"
+        rel="noopener"
+        target="_blank"
+        >Github</a
+      >
+    </div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="error.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Product+Sans");
+
+* {
+  font-family: Product Sans;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url("bgDark.png");
+    box-shadow: inset 0 0 0 1000px #1b1d25db;
+  }
+
+  .logo-wrapper h1,
+  #uv-error-code {
+    color: #fff;
+  }
+
+  form input {
+    background: #16203b;
+    border: 1px solid #16203b;
+    color: #fff;
+  }
+
+  form input:focus,
+  form input:hover {
+    background: #191725;
+    border: 1px solid #191725;
+  }
+
+  .left-margin,
+  #uv-register-sw {
+    color: #fff;
+  }
+
+  a,
+  .bottomText {
+    color: #32476d;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: url("bgLight.png");
+    box-shadow: inset 0 0 0 1000px #f7f9fcdb;
+  }
+
+  .logo-wrapper h1,
+  #uv-error-code {
+    color: #000;
+  }
+
+  form input {
+    background: #cbdcf5;
+    border: 1px solid #cbdcf5;
+    color: #000;
+  }
+
+  form input:focus,
+  form input:hover {
+    background: #ecf3ff;
+    border: 1px solid #ecf3ff;
+  }
+
+  .left-margin,
+  #uv-register-sw {
+    color: #000;
+  }
+
+  a,
+  .bottomText {
+    color: #abc2e6;
+  }
+}
+
+body {
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+
+.flex-center,
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-center {
+  margin-top: 10%;
+}
+
+.center-margin {
+  display: grid;
+  place-items: center;
+}
+
+.left-margin {
+  margin: 0 16px;
+}
+
+#uv-error {
+  color: #ff6666 !important;
+  white-space: pre-wrap;
+}
+
+#uv-error-code {
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#uv-register-sw {
+  color: #fff;
+  background: #555;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 20px;
+  line-height: 16px;
+  display: none;
+}
+
+#uv-register-sw:active {
+  background: #333;
+}
+
+#uv-register-sw.show {
+  display: block;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+form input {
+  padding: 0 17px;
+  height: 48px;
+  width: 500px;
+  margin-top: 5px;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 0 0 25px 0 rgba(5, 5, 5, 0);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+  box-shadow: 0 0 25px 0 rgba(5, 5, 5, 0.514);
+}
+
+form input:hover {
+  box-shadow: 0 0 25px 0 rgba(5, 5, 5, 0.514);
+}
+
+form input:focus:hover {
+  animation-iteration-count: 0;
+}
+
+.bottomText {
+  position: absolute;
+  bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
