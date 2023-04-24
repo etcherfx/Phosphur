@@ -72,6 +72,49 @@
   }
 }
 
+@keyframes dropIn {
+  from {
+    filter: blur(5px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blurOut {
+  from {
+    filter: blur(5px);
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dropIn,
+.blurOut {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+}
+
+.dropIn {
+  animation-name: dropIn;
+}
+
+.blurOut {
+  opacity: 0;
+  animation-name: blurOut;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 body {
   margin: 0;
   background-size: cover;
