@@ -1,4 +1,4 @@
-import createBareServer from "@tomphttp/bare-server-node";
+import { createBareServer } from "@tomphttp/bare-server-node";
 import express from "express";
 import { createServer } from "node:http";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
@@ -68,6 +68,7 @@ function shutdown() {
   console.log("SIGTERM signal received: closing HTTP server");
   server.close();
   bare.close();
+  process.exit(0);
 }
 
 server.listen({

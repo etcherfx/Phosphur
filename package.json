@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@titaniumnetwork-dev/ultraviolet": "^2.0.0-beta.1",
-    "@tomphttp/bare-server-node": "^1.2.5",
+    "@tomphttp/bare-server-node": "^2.0.0-beta",
     "express": "^4.18.2"
   },
   "devDependencies": {
