@@ -25,7 +25,14 @@
 
 ## Deployment
 
-- Clone [Phosphur](https://github.com/etcherfx/Phosphur) to a hosting service
+### Deploy to Replit:
+
+<a href="https://replit.com/github/etcherfx/Phosphur" target="_blank"><img src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg" alt="Run on Replit"></a>
+
+- Open the `Run on replit` button in a new tab and press `Import from Github`
+
+## Setting up the enviorment
+
 - Install dependencies:
 
   ```
