@@ -13,9 +13,12 @@
   "author": "EtcherFX",
   "license": "MIT",
   "dependencies": {
+    "@mercuryworkshop/bare-mux": "^1.0.4",
+    "@mercuryworkshop/epoxy-transport": "^1.0.2",
     "@titaniumnetwork-dev/ultraviolet": "^3.0.0",
-    "@tomphttp/bare-server-node": "^2.0.3",
-    "express": "^4.19.1"
+    "express": "^4.19.1",
+    "wisp-server-node": "^1.0.1",
+    "ws": "^8.16.0"
   },
   "devDependencies": {
     "eslint": "^8.39.0",
