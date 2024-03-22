@@ -23,8 +23,10 @@ async function registerSW() {
   if (!navigator.serviceWorker)
     throw new Error("Your browser doesn't support service workers.");
 
-  // Ultraviolet has a stock `sw.js` script.
   await navigator.serviceWorker.register(stockSW, {
     scope: __uv$config.prefix,
   });
+
+  let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
+  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
 }
