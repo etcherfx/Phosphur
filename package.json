@@ -13,15 +13,15 @@
   "author": "EtcherFX",
   "license": "MIT",
   "dependencies": {
-    "@mercuryworkshop/bare-mux": "^1.0.9",
+    "@mercuryworkshop/bare-mux": "^1.1.0",
     "@mercuryworkshop/epoxy-transport": "^1.1.0",
-    "@titaniumnetwork-dev/ultraviolet": "^3.1.1",
+    "@titaniumnetwork-dev/ultraviolet": "^3.1.2",
     "express": "^4.19.2",
     "wisp-server-node": "^1.0.6",
-    "ws": "^8.17.0"
+    "ws": "^8.17.1"
   },
   "devDependencies": {
-    "eslint": "^9.1.1",
-    "prettier": "^3.2.5"
+    "eslint": "^9.5.0",
+    "prettier": "^3.3.2"
   }
 }
