@@ -24,9 +24,18 @@
   </head>
 
   <body>
-    <div class="flex-center logo-wrapper header-center dropIn unselectable">
-      <img class="logo" src="phosphur.png" alt="Phosphur Logo" />
-      <h1>Phosphur</h1>
+    <div class="flex-center header-center dropIn unselectable">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="bannerDark.png" />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="bannerLight.png"
+        />
+        <img
+          src="bannerLight.png"
+          alt="Phosphur Banner"
+          class="banner"
+      </picture>
     </div>
     <form autocomplete="off" id="uv-form" class="flex-center blurOut">
       <input

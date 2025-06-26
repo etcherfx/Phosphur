@@ -4,25 +4,19 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: url("bgDark.png");
-    box-shadow: inset 0 0 0 1000px #1b1d25db;
-  }
-
-  .logo-wrapper h1,
-  #uv-error-code {
-    color: #fff;
+    background-image: url("bgDark.avif");
   }
 
   form input {
-    background: #16203b;
-    border: 1px solid #16203b;
+    background: #30488a;
+    border: 1px solid #30488a;
     color: #fff;
   }
 
   form input:focus,
   form input:hover {
-    background: #191725;
-    border: 1px solid #191725;
+    background: #2f4064;
+    border: 1px solid #2f4064;
   }
 
   .left-margin,
@@ -32,31 +26,25 @@
 
   a,
   .bottomText {
-    color: #32476d;
+    color: #4872c0;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-image: url("bgLight.png");
-    box-shadow: inset 0 0 0 1000px #f7f9fcdb;
-  }
-
-  .logo-wrapper h1,
-  #uv-error-code {
-    color: #000;
+    background-image: url("bgLight.avif");
   }
 
   form input {
-    background: #cbdcf5;
-    border: 1px solid #cbdcf5;
+    background: #b1c7ee;
+    border: 1px solid #b1c7ee;
     color: #000;
   }
 
   form input:focus,
   form input:hover {
-    background: #ecf3ff;
-    border: 1px solid #ecf3ff;
+    background: #cbdcf5;
+    border: 1px solid #cbdcf5;
   }
 
   .left-margin,
@@ -66,7 +54,7 @@
 
   a,
   .bottomText {
-    color: #abc2e6;
+    color: #6e84a7;
   }
 }
 
@@ -185,19 +173,19 @@ body {
   display: block;
 }
 
-.logo {
-  width: 150px;
-  height: 150px;
+.banner {
+  width: 720px;
+  height: 280px;
 }
 
 form input {
   padding: 0 17px;
   height: 48px;
-  width: 500px;
-  margin-top: 5px;
+  width: 800px;
+  margin-top: 15px;
   border-radius: 50px;
   outline: none;
-  box-shadow: 0 0 25px 0 rgba(5, 5, 5, 0);
+  box-shadow: 0 0 15px 0 rgba(5, 5, 5, 0);
   transition:
     background 0.3s ease,
     border-color 0.3s ease,
@@ -205,11 +193,11 @@ form input {
 }
 
 form input:focus {
-  box-shadow: 0 0 25px 0 rgba(5, 5, 5, 0.514);
+  box-shadow: 0 0 10px 0 rgba(5, 5, 5, 0.514);
 }
 
 form input:hover {
-  box-shadow: 0 0 25px 0 rgba(5, 5, 5, 0.514);
+  box-shadow: 0 0 10px 0 rgba(5, 5, 5, 0.514);
 }
 
 form input:focus:hover {

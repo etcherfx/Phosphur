@@ -1,42 +1,36 @@
+<h1 align="center">
+  <img src="projectInfo/banner.png" alt="Phosphur Banner" width="850">
+</h1>
+
 <div align ="center">
-
-<img src="projectInfo/icon.png" width="180">
-
-# Phosphur
-
-<span style="font-size:18px;">A minimalistic web proxy.</span>
 
 [![CodeFactor](https://www.codefactor.io/repository/github/etcherfx/phosphur/badge/main?style=for-the-badge)](https://www.codefactor.io/repository/github/etcherfx/phosphur/overview/main)
 [![License](https://img.shields.io/github/license/etcherfx/Phosphur?style=for-the-badge)](https://github.com/etcherfx/Phosphur/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/etcherfx/Phosphur?style=for-the-badge)](https://github.com/etcherfx/Phosphur/issues) <br>
+[![GitHub issues](https://img.shields.io/github/issues/etcherfx/Phosphur?style=for-the-badge)](https://github.com/etcherfx/Phosphur/issues)
+[![GitHub forks](https://img.shields.io/github/forks/etcherfx/Phosphur?style=for-the-badge)](https://github.com/etcherfx/Phosphur/network)
 [![GitHub Release](https://img.shields.io/github/release/etcherfx/Phosphur?include_prereleases&style=for-the-badge)](https://github.com/etcherfx/Phosphur/releases/latest)
+
+**A minimalistic Ultraviolet frontend.**
 
 </div>
 
-## Links
+## 📖 Table of Contents
 
-[Releases](https://github.com/etcherfx/Phosphur/releases)
+- [📖 Table of Contents](#-table-of-contents)
+- [🔗 Links](#-links)
+- [⚙️ Setting up the enviorment](#️-setting-up-the-enviorment)
+- [📝 Credits](#-credits)
 
-## Projects Used
+## 🔗 Links
 
-- [Ultraviolet-App](https://github.com/titaniumnetwork-dev/Ultraviolet-App)
-- [Ultraviolet-Static](https://github.com/titaniumnetwork-dev/Ultraviolet-Static)
-- [acrylic-mica-css](https://github.com/yell0wsuit/acrylic-mica-css)
+- [Releases](https://github.com/etcherfx/Phosphur/releases)
 
-## Deployment
-
-### Deploy to Replit:
-
-<a href="https://replit.com/github/etcherfx/Phosphur" target="_blank"><img src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg" alt="Run on Replit"></a>
-
-- Open the `Run on replit` button in a new tab and press `Import from Github`
-
-## Setting up the enviorment
+## ⚙️ Setting up the enviorment
 
 - Install dependencies:
 
   ```
-  npm install
+  npm i
   ```
 
 - Start the app:
@@ -45,7 +39,7 @@
   npm start
   ```
 
-## Credits
+## 📝 Credits
 
 - Icon from [icons8](https://icons8.com/icon/SA3MF2iUwDMR/measuring-cylinder)
-- Wallpapers from Microsoft's Windows 11 OS
+- Wallpapers from [Freepik](https://www.freepik.com/free-photo/abstract-dark-blue-wallpaper-image_11303164.htm)
