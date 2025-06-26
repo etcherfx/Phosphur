@@ -1,7 +1,7 @@
 {
   "name": "phosphur",
-  "version": "0.2.0",
-  "description": "A minimalistic web proxy.",
+  "version": "0.3.0",
+  "description": "A minimalistic Ultraviolet frontend",
   "type": "module",
   "engines": {
     "npm": ">=7.0.0",
