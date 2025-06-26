@@ -27,17 +27,17 @@
 
 ## ⚙️ Setting up the enviorment
 
-- Install dependencies:
+1. Install dependencies:
 
-  ```
-  npm i
-  ```
+   ```
+   npm i
+   ```
 
-- Start the app:
+2. Start the app:
 
-  ```
-  npm start
-  ```
+   ```
+   npm start
+   ```
 
 ## 📝 Credits
 
