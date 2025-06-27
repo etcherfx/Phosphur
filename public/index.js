@@ -24,6 +24,11 @@ form.addEventListener("submit", async (event) => {
 
 	frame.style.display = "block";
 	
+	const themeContainer = document.querySelector('.theme-toggle-container');
+	if (themeContainer) {
+		themeContainer.style.display = 'none';
+	}
+	
 	const wispUrl = `${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/wisp/`;
 	
 	if (await connection.getTransport() !== "/epoxy/index.mjs") {
