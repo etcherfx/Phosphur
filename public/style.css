@@ -325,3 +325,27 @@ a:hover {
   -ms-user-select: none;
   user-select: none;
 }
+
+@media screen and (max-width: 768px) {
+  form input {
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto 0 auto;
+  }
+
+  .header-center {
+    margin-top: 30%;
+  }
+
+  .banner {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 720/280;
+  }
+
+  .bottomText {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
