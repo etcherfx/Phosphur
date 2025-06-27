@@ -14,6 +14,14 @@
       href="https://fonts.googleapis.com/css?family=Product+Sans"
       rel="stylesheet"
     />
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-theme");
+        }
+      })();
+    </script>
     <script src="baremux/index.js" defer></script>
     <script src="epoxy/index.js" defer></script>
     <script src="uv/uv.bundle.js" defer></script>
@@ -24,18 +32,17 @@
   </head>
 
   <body>
+    <div class="theme-toggle-container">
+      <button
+        id="theme-toggle"
+        class="theme-toggle-btn unselectable"
+        aria-label="Toggle theme"
+      >
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
     <div class="flex-center header-center dropIn unselectable">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="bannerDark.png" />
-        <source
-          media="(prefers-color-scheme: light)"
-          srcset="bannerLight.png"
-        />
-        <img
-          src="bannerLight.png"
-          alt="Phosphur Banner"
-          class="banner"
-      </picture>
+      <img id="banner-img" src="" alt="Phosphur Banner" class="banner" />
     </div>
     <form autocomplete="off" id="uv-form" class="flex-center blurOut">
       <input
@@ -56,10 +63,8 @@
       <p id="uv-error"></p>
       <pre id="uv-error-code"></pre>
     </div>
-    <div class="bottomText unselectable" style="left: 10px">
-      Phosphur v0.3.0
-    </div>
-    <div class="bottomText unselectable" style="right: 10px">
+    <div class="bottomText unselectable left">Phosphur v0.3.0</div>
+    <div class="bottomText unselectable right">
       <a
         href="https://github.com/etcherfx/Phosphur"
         rel="noopener"
@@ -67,6 +72,6 @@
         >Github</a
       >
     </div>
-    <iframe style="display: none" id="uv-frame"></iframe>
+    <iframe id="uv-frame" title="Proxy Content Frame"></iframe>
   </body>
 </html>

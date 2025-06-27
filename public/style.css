@@ -2,60 +2,123 @@
   font-family: Product Sans;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-image: url("bgDark.avif");
-  }
+.theme-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-  form input {
-    background: #30488a;
-    border: 1px solid #30488a;
-    color: #fff;
-  }
+.theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 0;
+  margin: 0;
+  position: relative;
+  will-change: transform, background-color, border-color;
+  transform: translateZ(0);
+}
 
-  form input:focus,
-  form input:hover {
-    background: #2f4064;
-    border: 1px solid #2f4064;
-  }
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
 
-  .left-margin,
-  #uv-register-sw {
-    color: #fff;
-  }
+.theme-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  transform: translateZ(0);
+}
 
-  a,
-  .bottomText {
-    color: #4872c0;
+.theme-toggle-btn:hover .theme-icon {
+  transform: rotate(15deg);
+}
+
+.theme-icon.spin {
+  animation: spin 0.6s ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-image: url("bgLight.avif");
-  }
+body {
+  background-image: url("bgLight.avif");
+}
 
-  form input {
-    background: #b1c7ee;
-    border: 1px solid #b1c7ee;
-    color: #000;
-  }
+html.dark-theme body,
+body.dark-theme {
+  background-image: url("bgDark.avif");
+}
 
-  form input:focus,
-  form input:hover {
-    background: #cbdcf5;
-    border: 1px solid #cbdcf5;
-  }
+form input {
+  background: #b1c7ee;
+  border: 1px solid #b1c7ee;
+  color: #000;
+}
 
-  .left-margin,
-  #uv-register-sw {
-    color: #000;
-  }
+form input:focus,
+form input:hover {
+  background: #cbdcf5;
+  border: 1px solid #cbdcf5;
+}
 
-  a,
-  .bottomText {
-    color: #6e84a7;
-  }
+.left-margin,
+#uv-register-sw {
+  color: #000;
+}
+
+a,
+.bottomText {
+  color: #6e84a7;
+}
+
+body.dark-theme form input {
+  background: #30488a;
+  border: 1px solid #30488a;
+  color: #fff;
+}
+
+body.dark-theme form input:focus,
+body.dark-theme form input:hover {
+  background: #2f4064;
+  border: 1px solid #2f4064;
+}
+
+body.dark-theme .left-margin,
+body.dark-theme #uv-register-sw {
+  color: #fff;
+}
+
+body.dark-theme a,
+body.dark-theme .bottomText {
+  color: #4872c0;
 }
 
 @keyframes dropIn {
@@ -105,11 +168,33 @@ body {
   margin: 0;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  -webkit-backdrop-filter: blur(40px);
-  backdrop-filter: blur(40px);
+  transition:
+    background-image 0.15s ease-in-out,
+    filter 0.15s ease-in-out;
+  will-change: background-image, filter;
+  transform: translateZ(0);
+  contain: layout style paint;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  background-repeat: inherit;
+  background-position: inherit;
+  background-attachment: inherit;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 .flex-center,
@@ -134,6 +219,7 @@ body {
 }
 
 #uv-frame {
+  display: none;
   border: none;
   position: absolute;
   top: 0;
@@ -176,6 +262,10 @@ body {
 .banner {
   width: 720px;
   height: 280px;
+  transition: opacity 0.2s ease;
+  will-change: opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 form input {
@@ -190,6 +280,8 @@ form input {
     background 0.3s ease,
     border-color 0.3s ease,
     box-shadow 0.3s ease;
+  will-change: background, border-color, box-shadow;
+  transform: translateZ(0);
 }
 
 form input:focus {
@@ -209,6 +301,14 @@ form input:focus:hover {
   bottom: 10px;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+.bottomText.left {
+  left: 10px;
+}
+
+.bottomText.right {
+  right: 10px;
 }
 
 a {
