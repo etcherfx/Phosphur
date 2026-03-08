@@ -6,7 +6,7 @@ import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 import { join } from "node:path";
 import { hostname } from "node:os";
 import path from 'path';
-import wisp from "wisp-server-node"
+import { server as wisp } from "@mercuryworkshop/wisp-js/server";
 
 const __filename = path.resolve(new URL(import.meta.url).pathname.replace(/^\/([a-z]):\//i, '$1:/'));
 const __dirname = path.dirname(__filename);
