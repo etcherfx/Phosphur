@@ -14,6 +14,9 @@
 
 </div>
 
+> [!WARNING]
+> This project is no longer maintained.
+
 ## 📖 Table of Contents
 
 - [📖 Table of Contents](#-table-of-contents)
